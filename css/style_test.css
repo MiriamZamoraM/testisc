@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url(../img/test3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.click{
+    font-size: 20px;
+    padding: auto;
+    text-align: center;
+    background-color: rgba(255, 251, 251, 0.39);
+}
+
+.h_all{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.h_principal{
+    width: 100%;
+    height: 100px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blue(10px);
+    /*background-color: rgba(61, 65, 68, 0.63);*/
+}
+
+.h_principal div{
+    color: white;
+    transition: all 500ms;
+}
+
+.h_principal div h1{
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(22, 7, 75);
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.container_all{
+    width: 100%;
+    height: 800px;
+    padding-top: 0%;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blue(10px);
+    /*background-color: rgba(61, 65, 68, 0.63);*/
+    transition: all 500ms;
+}
+
+.cont_form{
+    margin: 100px 400px;
+    color: white;
+    transition: all 500ms;
+}
+
+/*.cont_form div{
+    margin: 100px 10px;
+    /*color: white;
+    transition: all 500ms;
+}
+
+.cont_form div p,
+.cont_form div button{
+    margin-top: 30px;
+}
+
+.cont_form button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 660;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+    float: right;
+}
+
+/*Formulario de datos*/
+
+.pregunta1{
+    display: flex;
+    align-items: center;
+    width: 5000px;
+    max-width: 700px;
+    position: relative;
+    top: 150px;
+    left: 10px;
+    transition: left 800ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.pregunta1 form{
+    width: 100%;
+    height: fit-content;
+    padding: 80px 20px;
+    background: rgba(125, 19, 170, 0.541);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.pregunta1 form h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.pregunta1 form h5{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.pregunta1 form input{
+    width: 100%;
+    height: 4cm;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.pregunta1 form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    align-items: center;
+    border: none;
+    font-size: 14px;
+    background: #6225c5f6;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}

@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../img/test2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.head_h{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+}
+
+.head_principal{
+    width: 100%;
+    height: 100px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blue(10px);
+    /*background-color: rgba(61, 65, 68, 0.63);*/
+    transition: all 500ms;
+}
+
+.head_principal div{
+    margin: 10px 10px;
+    color: white;
+    transition: all 500ms;
+}
+
+.head_principal div p{
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    background-color: whitesmoke;
+}
+
+.head_principal div h1{
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(1, 40, 148);
+}
+
+.contenedor_prin{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja_principal{
+    width: 100%;
+    height: 300px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blue(10px);
+    background-color: rgba(7, 118, 228, 0.329);
+}
+
+.caja_principal div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+.caja_principal div p{
+    float: right;
+    font-size: 24px;
+}
+
+.caja_principal div p,
+.caja_principal div button{
+    margin-top: 30px;
+}
+
+.caja_principal div h3{
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+}
+
+.caja_principal button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 660;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja_principal button:hover{
+    background: #fff;
+    color: #1870c9;
+}
+
+/*Responsive design*/
+@media screen and (max-width: 850px) {
+
+    .head_h{
+        margin-top: 50px;
+    }
+
+    .head_principal{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .head_principal div{
+        margin: 0;
+        position: absolute;
+    }
+
+
+    .main{
+        margin-top: 50px;
+    }
+
+    .caja_principal{
+        max-width: 750px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja_principal div{
+        margin: 0;
+        position: absolute;
+    }
+}

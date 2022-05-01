@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(../img/homeblue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 1;
+}
+/*Cambiar a gridcard*/
+h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.contendor_principal {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.derecha {
+    float: left;
+    width: 500px;
+    height: 300px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blue(10px);
+    background-color: rgba(170, 174, 177, 0.5);
+}
+
+.caja_derecha {
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+    position: fixed;
+}
+
+    .caja_derecha div p,
+    .caja_derecha div button {
+        margin-top: 30px;
+    }
+
+    .caja_derecha div h3 {
+        font-weight: 400;
+        font-size: 26px;
+    }
+
+    .caja_derecha button {
+        padding: 10px 40px;
+        border: 2px solid #fff;
+        background: transparent;
+        font-size: 14px;
+        font-weight: 660;
+        cursor: pointer;
+        color: white;
+        outline: none;
+        transition: all 300ms;
+    }
+
+        .caja_derecha button:hover {
+            background: #fff;
+            color: #000000;
+        }
+
+.izquierda {
+    float: right;
+    width: 500px;
+    height: 800px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blue(10px);
+}
+
+.caja_izquierda img {
+    float: right;
+    width: 500px;
+    height: 280px;
+    border: 2px solid #fff;
+}
+
+    .caja_izquierda img.uno {
+        object-fit: scale-down;
+    }
+
+    .caja_izquierda img.dos {
+        object-fit: scale-down;
+    }
+
+/*Responsive design*/
+
+@media screen and (max-width: 850px) {
+    main {
+        margin-top: 50px;
+    }
+
+    .derecha {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+        .derecha div {
+            margin: 0;
+            position: absolute;
+        }
+
+    .izquierda {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+        .izquierda img {
+            margin: 0;
+            position: absolute;
+        }
+}
+
+.footer {
+    float: left;
+    width: 500px;
+    height: 100px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blue(10px);
+}
+
+    .footer div p {
+        margin: 100px 40px;
+        color: rgb(17, 17, 82);
+        transition: all 500ms;
+        background-color: rgba(63, 61, 61, 0.658);
+        cursor: pointer;
+    }
